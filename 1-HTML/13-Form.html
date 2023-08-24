@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form in HTML</title>
+    </head>
+    <body>
+        <form action="index.php" method="POST">
+
+        <label for="username">Username :</label> 
+        <input type="text" id="username" minlength="6" maxlength="12" required><br>
+
+        <label for="password">Password :</label> 
+        <input type="password" id="password" minlength="6" maxlength="12" required><br>
+
+        <label for="email">E-mail :</label> 
+        <input type="email" id="email" required><br>
+
+        <label for="Phone">Phone :</label> 
+        <input type="number" id="Phone" minlength="10" maxlength="12" required><br>
+
+        <label for="Bday">Birthday :</label> 
+        <input type="date" id="Bday" required><br>
+
+        <label for="title">Title :</label> 
+        <label for="Mr.">Mr. :</label>
+        <input type="radio" id="Mr." value="Mr." name="title">
+        <label for="Ms.">Ms. :</label>
+        <input type="radio" id="Ms." value="Ms." name="title">
+        <label for="Phd.">Mr. :</label>
+        <input type="radio" id="Phd." value="Phd." name="title"><br>
+
+        <label for="payment">Payment:</label>
+        <select>
+            <option value="visa">visa</option>
+            <option value="mastercard">mastercard</option>
+            <option value="giftcard">giftcard</option>
+        </select><br>
+
+        <label for="file">file: </label>
+        <input type="file" id="file" accept="image/png"><br>
+        <input type="reset">
+        <input type="submit">
+        </form>
+    </body>
+</html>
