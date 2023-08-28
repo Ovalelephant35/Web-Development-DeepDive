@@ -1,0 +1,16 @@
+body{
+    margin : 10px
+}
+.box{
+    border : 5px solid;
+    font-size : 5em;
+    width : 250px;
+    margin : auto;
+
+}
+#box1{
+    background-color: red;
+}
+#box2{
+    background-color: aqua;
+}
