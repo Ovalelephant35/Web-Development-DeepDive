@@ -1,0 +1,8 @@
+body{
+    border: 3px solid;
+    display: flow-root;
+}
+#id1{
+    float:left;
+    margin-right:10px;
+}
