@@ -1,0 +1,6 @@
+.pagination{
+    text-align:center;
+}
+.pagination a.active{
+    background-color:green;
+}

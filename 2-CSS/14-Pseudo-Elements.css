@@ -1,0 +1,13 @@
+h1::first-letter{
+    font-size:2em;
+}
+p::first-line{
+    background-color: aqua;
+}
+#Fruits li::marker{
+    content: "✔️";
+    color:blue;
+}
+#Apple::after{
+    content:"🍎"
+}

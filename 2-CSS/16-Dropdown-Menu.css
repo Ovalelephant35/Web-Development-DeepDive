@@ -1,0 +1,22 @@
+.dropdown button{
+    background-color:rgb(240, 207, 207);
+    color:aqua;
+    padding : 10px 15px;
+    border : none;
+    cursor : pointer;
+}
+.dropdown a{
+    display:block;
+    color:black;
+    text-decoration: none;
+}
+.dropdown .content{
+    display:none;
+    position:absolute;
+    background-color: white;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px black;
+}
+.dropdown:hover .content{
+    display:block
+}
