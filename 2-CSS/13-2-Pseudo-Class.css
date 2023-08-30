@@ -1,0 +1,9 @@
+li:hover{
+    background-color:green;
+}
+li:not(:hover){
+    background-color:grey;
+}
+li:nth-child(3){
+    display : none;
+}

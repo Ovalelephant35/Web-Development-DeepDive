@@ -1,0 +1,15 @@
+#Container{
+    border : 2px solid;
+}
+#Container p{
+    background-color : aqua;
+}
+#Container > p{
+    background-color: greenyellow;
+}
+#Container ~ p{
+    background-color: yellow;
+}
+#Container + p{
+    background-color: red;
+}

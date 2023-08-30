@@ -1,0 +1,10 @@
+a:link{
+    color: green;
+}
+ a:hover{
+    color : red;
+    font-size : 1.1em;
+ }
+ a:visited{
+    color : green;
+ }
