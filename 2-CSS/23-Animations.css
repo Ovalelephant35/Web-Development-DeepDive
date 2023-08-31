@@ -1,0 +1,12 @@
+#box{
+    width : 250px;
+    height : 250px;
+    background-color: red;
+    font-size: 11em;
+    text-align: center;
+    animation-name: slideUp;
+    animation-duration: 10s;
+}
+@keyframes slideUp{
+    from{transform: translateY(300%)}
+}

@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+}
+.box{
+    width:250px;
+    height: 250px;
+    border: 5px solid;
+    font-size: 13em;
+    text-align: center;
+    transform: rotatez(45deg);
+    margin-left: 150px;
+}
+#box1{
+    background-color:red;
+}
+#box2{
+    background-color:palegoldenrod;
+}
+#box3{
+    background-color:skyblue;
+}
