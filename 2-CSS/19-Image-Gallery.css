@@ -1,0 +1,10 @@
+.gallery{
+    display: inline-block;
+    border: 1px solid grey;
+    margin:5px;
+}
+.gallery .desc{
+    padding: 10px;
+    text-align:center;
+}
+

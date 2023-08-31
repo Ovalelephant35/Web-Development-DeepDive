@@ -1,0 +1,18 @@
+.icons{
+    text-align: center;
+}
+.fa-solid.fa-headset.fa-5x{
+    color:red;
+}
+.fa-solid.fa-book.fa-5x{
+    color:aqua;
+}
+.fa-solid.fa-image.fa-5x{
+    color:green;
+}
+.fa-solid.fa-bookmark.fa-5x{
+    color:yellow;
+}
+.fa-solid.fa-headset.fa-5x:hover{
+    color:blue;
+}
