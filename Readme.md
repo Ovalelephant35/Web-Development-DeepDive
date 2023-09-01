@@ -25,8 +25,8 @@ If you're new to this repository, start by exploring the [Getting Started](getti
 This repository covers a broad spectrum of web development topics, including but not limited to:
 
 - HTML5 and CSS3 fundamentals
-- JavaScript and ECMAScript features
-- Frontend libraries and frameworks (React, Vue, Angular)
+- JavaScript
+- Frontend libraries and frameworks (React)
 - Backend development with Node.js, Django, Ruby on Rails, etc.
 - RESTful API design and integration
 - Database design and management (SQL and NoSQL)
