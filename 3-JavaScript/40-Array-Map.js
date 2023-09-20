@@ -1,5 +1,5 @@
 //array.map(name of fucntion) executes a provided callback function once for each element and creates a new array 
-//with this also same three arguments are provided but as we can see new array is being created
+//with this also same elements arguments are provided but as we can see new array is being created
 
 let num = [1,2,3,4,5,6];
 let squ = num.map(squares);//added to new array 
