@@ -3,4 +3,6 @@
 console.time("Response time");//start
 alert("Click the ok the button");
 console.timeEnd("Response time");//end time
-//doesnt wait for as
+//doesnt wait for asyn
+
+setTimeout(() => console.log("Hello") , 3000);
