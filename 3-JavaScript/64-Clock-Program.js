@@ -5,7 +5,7 @@ function update(){
     let date = new Date();
     my.innerHTML = formatTime(date);
 
-    function formatTime(){
+    function formatTime(date){
         let hours = date.getHours();
         let minutes = date.getMinutes();
         let seconds = date.getSeconds();
@@ -16,8 +16,8 @@ function update(){
 
     }
     function zereos(time){
-        time.toString();
-        return time.length <2 ? "0" +time : time;
+        time = time.toString();
+        return time.length <  2 ? "0" + time : time;
     }
 
 }
