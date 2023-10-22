@@ -3,3 +3,4 @@
 console.time("Response time");//start
 alert("Click the ok the button");
 console.timeEnd("Response time");//end time
+//doesnt wait for as
