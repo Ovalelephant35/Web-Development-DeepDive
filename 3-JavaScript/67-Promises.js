@@ -1,12 +1,12 @@
 //promises = object that encapsules the result of an asyn operation and helps return like syn process
-const promiseb = new Promise((res, rej) => {
+const promiseb = new Promise((rej, res) => {
     let fileloaded = true;
 
     if(!fileloaded){
-        res("file Loaded");
+        rej("file Loaded");
     }
     else if(fileloaded){
-        rej("File NOT Loaded");//there can only be if statment thus it will not do anything 
+        res("File NOT Loaded");//there can only be if statment thus it will not do anything 
     }
 });//this is producing code
 promiseb.then((value) => {console.log(value)}).
