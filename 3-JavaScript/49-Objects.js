@@ -12,4 +12,5 @@ const car = {
     }
 }
 car.drive();
+console.log(car["drive"]);
 //further const car2 and more can be created
