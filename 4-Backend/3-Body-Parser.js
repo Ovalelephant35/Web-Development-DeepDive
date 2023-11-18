@@ -23,6 +23,8 @@ function sum(count) {
     }
     return (count * (count + 1)) / 2;
 }
+
+
 app.listen(port, start)
 
 app.post('/sum', handle)
