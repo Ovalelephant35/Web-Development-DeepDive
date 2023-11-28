@@ -66,28 +66,28 @@ console.log(arr3);
 
 //6-Read A given File
 const fs = require('fs');
-// const { DefaultDeserializer } = require('v8');
-// fs.readFile('Text.txt' , 'utf-8' , (err ,data) =>{
-//     if(err){
-//         console.log("error");
-//         return 
-//     }
-//     console.log(data);
-// })
 
-//7-Reading and Writing File simul
+fs.readFile('Text.txt' , 'utf-8' , (err ,data) =>{
+    if(err){
+        console.log("error");
+        return 
+    }
+    console.log(data);
+})
 
-// fs.readFile('Text.txt' , 'utf-8' , (err,data)=>{
-//     if(err){
-//         console.log("Error");
-//         return 
-//     }
-//     else if(data==0) fs.writeFile('Text.txt' , "1" , (err)=>{} );
-//     else fs.writeFile('Text.txt' , "0", (err)=>{} );
+// 7-Reading and Writing File simul
+
+fs.readFile('Text.txt' , 'utf-8' , (err,data)=>{
+    if(err){
+        console.log("Error");
+        return 
+    }
+    else if(data==0) fs.writeFile('Text.txt' , "1" , (err)=>{} );
+    else fs.writeFile('Text.txt' , "0", (err)=>{} );
    
-// } )
+} )
 
-//8-Doing some fun with Async Functins
+// 8-Doing some fun with Async Functins
 
 function series(){
     fs.readFile('Text.txt' , 'utf-8' , reading);
