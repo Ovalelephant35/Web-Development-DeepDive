@@ -1,6 +1,6 @@
 function logbody(jsonBody){
     console.log(jsonBody);
-}
+ }
 
 function func(res){
     res.json().then(logbody);
