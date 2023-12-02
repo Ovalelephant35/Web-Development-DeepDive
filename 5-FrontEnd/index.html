@@ -18,21 +18,68 @@
 
         <button type="button" onclick="submitForm()">Submit</button>
     </form>
-
+    <div id="Main"></div>
     <script>
+        function del(id){
+            fetch("http://localhost:3000/todos" + id , {
+                method : "DELETE",
+                headers:{
+                    "Content-Type" : "application/json"
+                }
+            }).then(()=>{
+                console.log("");
+            })
+        }
         function submitForm() {
+            var title =document.getElementById("title").value;
+            var description = document.getElementById("description").value;
+
+            function getData(){
+                fetch("http://localhost:3000/todos" , {
+                    method : "GET",
+                }).then((res)=>{
+                    res.json().then((data)=>{
+                        var parent = document.getElementById("Main");
+                        for(var i=0 ; i<data.length ; i++){
+                        var child1 = document.createElement("div");
+                        var grandchild1 = document.createElement("span");
+                        grandchild1.innerHTML = data[i].title;
+                        child1.appendChild(grandchild1);
+                        var grandchild2 = document.createElement("span");
+                        grandchild2.innerHTML = data[i].description;
+                        child1.appendChild(grandchild2);
+                        var grandchild3 = document.createElement("button");
+                        grandchild3.innerHTML = "Delete";
+                        grandchild3.setAttribute("onclick" , "del(" + data[i].id+ ")")
+                        child1.appendChild(grandchild3);
+                        parent.appendChild(child1);}
+                    })
+                })
+            }
+            getData();
             fetch("http://localhost:3000/todos" , {
                 method : "POST",
                 body : JSON.stringify({
-                    title : "GYM",
-                    description : "seven"
+                    title : title,
+                    description : description
                 }),
                 headers:{
                     "Content-Type" : "application/json"
                 }
             }).then((res)=>{
                 res.json().then((data)=>{
-                    console.log(data);
+                    var parent = document.getElementById("Main");
+                    var child1 = document.createElement("div");
+                    var grandchild1 = document.createElement("span");
+                    grandchild1.innerHTML = data.title;
+                    child1.appendChild(grandchild1);
+                    var grandchild2 = document.createElement("span");
+                    grandchild2.innerHTML = data.description;
+                    child1.appendChild(grandchild2);
+                    var grandchild3 = document.createElement("button");
+                    grandchild3.innerHTML = "Delete";
+                    child1.appendChild(grandchild3);
+                    parent.appendChild(child1);
                 })
             })
         }
